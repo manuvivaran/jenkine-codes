@@ -1,0 +1,83 @@
+Started by user [8mha:////4F70yD7CdsSTvqqxhYndE+OpWzpjE8qaZ0epgs/7lF+JAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgYu/dLi1CL93MS8UgCo35sjvwAAAA==[0mmanoj
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/manuvivaran/test2.git # timeout=10
+Fetching upstream changes from https://github.com/manuvivaran/test2.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/manuvivaran/test2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 8ac7b8d74442489742e02ae908533fad9960e4be (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8ac7b8d74442489742e02ae908533fad9960e4be # timeout=10
+Commit message: " added c source code"
+ > git rev-list --no-walk 8ac7b8d74442489742e02ae908533fad9960e4be # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins348275607559673162.sh
++ cd /var/lib/jenkins/workspace/c-project
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main () {
+ ^~~~
+main.c: In function ‘main’:
+main.c:3:2: warning: implicit declaration of function ‘biggest’ [-Wimplicit-function-declaration]
+  biggest();
+  ^~~~~~~
+main.c:4:2: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+  factorial();
+  ^~~~~~~~~
+main.c:5:2: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+  reverse();
+  ^~~~~~~
+main.c:6:2: warning: implicit declaration of function ‘palind’; did you mean ‘main’? [-Wimplicit-function-declaration]
+  palind();
+  ^~~~~~
+  main
+main.c:8:2: warning: implicit declaration of function ‘sum’ [-Wimplicit-function-declaration]
+  sum();
+  ^~~
+main.c:9:2: warning: implicit declaration of function ‘sort’; did you mean ‘stdout’? [-Wimplicit-function-declaration]
+  sort();
+  ^~~~
+  stdout
+main.c:10:2: warning: implicit declaration of function ‘fibonacci’ [-Wimplicit-function-declaration]
+  fibonacci();
+  ^~~~~~~~~
+gcc -c big2.c
+big2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest()
+ ^~~~~~~
+gcc -c fact.c
+fact.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  factorial() {
+  ^~~~~~~~~
+gcc -c rev.c
+rev.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ reverse()
+ ^~~~~~~
+gcc -c big3.c
+big3.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest3()
+ ^~~~~~~~
+gcc -c palind.c
+palind.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ palind()
+ ^~~~~~
+gcc -c sum.c
+sum.c:3:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  sum() {
+  ^~~
+gcc -c sort.c
+sort.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ sort(){
+ ^~~~
+gcc -c fibonacci.c	
+fibonacci.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  fibonacci() {
+  ^~~~~~~~~
+gcc -o ABC.exe main.o big2.o fact.o rev.o big3.o palind.o sum.o sort.o fibonacci.o
+Finished: SUCCESS

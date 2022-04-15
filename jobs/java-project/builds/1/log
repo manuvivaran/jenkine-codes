@@ -1,0 +1,27 @@
+Started by user [8mha:////4F70yD7CdsSTvqqxhYndE+OpWzpjE8qaZ0epgs/7lF+JAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgYu/dLi1CL93MS8UgCo35sjvwAAAA==[0mmanoj
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/java-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/manuvivaran/java-script.git
+ > git init /var/lib/jenkins/workspace/java-project # timeout=10
+Fetching upstream changes from https://github.com/manuvivaran/java-script.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/manuvivaran/java-script.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/manuvivaran/java-script.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 157ee76ce127d16ae7e5b4d811b08f3df9871a37 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 157ee76ce127d16ae7e5b4d811b08f3df9871a37 # timeout=10
+Commit message: "Merge branch 'master' of github.com:efsavage/hello-world-war"
+First time build. Skipping changelog.
+[java-project] $ /bin/sh -xe /tmp/jenkins7984600339224309792.sh
++ cd /var/lib/jenkins/workspace/java-project
++ mvn clean install
+/tmp/jenkins7984600339224309792.sh: line 4: mvn: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
